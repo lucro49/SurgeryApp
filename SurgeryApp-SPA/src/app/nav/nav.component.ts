@@ -30,6 +30,7 @@ model: any = {};
   logout(){
     localStorage.removeItem('token');
     this.alertify.message('logged out');
+    location.reload();
   }
 
 }
