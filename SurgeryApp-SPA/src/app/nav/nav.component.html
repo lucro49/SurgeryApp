@@ -1,13 +1,16 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-  <a class="navbar-brand" href="#">Logo Design</a>
+  <a class="navbar-brand" [routerLink]="['/home']">Logo Design</a>
 
     <ul class="navbar-nav mr-auto" *ngIf="loggedin()">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Patients Profiles
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/patient']"  >Patients Profiles
        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Administration</a>
+        <a class="nav-link" [routerLink]="['/lists']">Administration</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/messages']">Messages</a>
       </li>
     </ul>
     <ul class="navbar-nav mr-auto">
@@ -35,4 +38,3 @@
     <button [disabled]="!loginForm.valid" class="btn btn-success my-2 my-sm-0" type="submit">Login</button>
   </form>  
 </nav>
-<app-home *ngIf="!loggedin()"></app-home>
