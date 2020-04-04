@@ -1,0 +1,47 @@
+<div class="mt-4 ml-4">
+<div class="row">
+ <div class="col-sm-2">
+ <div class="card">
+   <img class="card-img-top img-thumbnail" src="https://randomuser.me/api/portraits/women/74.jpg" alt="{{user?.knownAs}}">
+   <div class="card-body">
+    <div>
+      <strong>Location:</strong>
+      <p>{{user?.city}}, {{user?.country}}</p>
+    </div>
+    <div>
+      <strong>Age:</strong>
+      <p>{{user?.age}}</p>
+    </div>
+    <div>
+      <strong>Gender:</strong>
+      <p>{{user?.gender}}</p>
+    </div>
+    <div>
+      <strong>Last Active:</strong>
+      <p>{{user?.lastActive}}</p>
+    </div>
+    <div>
+      <strong>Member since:</strong>
+      <p>{{user?.created}}</p>
+    </div>
+   </div>
+   <div class="card-footer">
+    <div class="btn-group d-flex">
+      <button class="btn btn-primary w-100">Deactivate</button>
+      <button class="btn btn-success w-100">Add Message</button>
+    </div>
+  </div>
+ </div>
+ </div>
+ <div class="col-sm-8">
+   <div>
+    <nav>
+      <hr>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <h3 style="font-weight: bold;">Medical History: </h3>
+          <p>{{user.introduction}}</p>
+      </div>
+    </nav>
+</div>
+</div>
+</div>
